@@ -1,0 +1,135 @@
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-tema {
+    background: none;
+    border: none;
+
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background: #a0b8cc;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 20px 20px 50px rgb(17, 17, 17);
+    align-items: center;
+
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d996;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+    padding: 8px;
+
+}
+
+main .cartao-pokemon .tipo {
+    padding: 9px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #d35ed3;
+}
+
+.fogo {
+    background-color: #da6338;
+}
+
+.agua {
+    background-color: #5555c7;
+}
+
+.inseto {
+    background-color: #5b9160;
+}
+.voador {
+    background-color: #dfdbdb;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    padding-right: 14px;
+    font-size: 14px;
+}
